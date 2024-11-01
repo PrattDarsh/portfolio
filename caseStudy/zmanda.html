@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zmanda</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-image: radial-gradient(#e6e6e6 1px, transparent 1px);
+        background-size: 20px 20px;
+        font-family: 'Satoshi', sans-serif;
+    }
+
+    .hover-expand {
+        transition: max-width 0.3s ease, padding 0.3s ease;
+    }
+
+    .max-width-100 {
+        max-width: 70px;
+    }
+
+
+    .max-width-400:hover {
+        max-width: 900px;
+    }
+
+</style>
+
+<body class="bg-white py-32 text-lg">
+    <div class="max-w-6xl mx-auto">
+        <div class="">
+            <h1 class="text-5xl max-w-4xl font-bold">Case Study: Rebranding Zmanda’s Webpages to a New Design System
+            </h1>
+        </div>
+        <section class="grid grid-cols-2 gap-6 items-center py-24">
+            <div class="text-lg space-y-20">
+                <div class="">
+                    <p class="font-bold text-2xl mb-4">Project Overview</p>
+                    <p>Zmanda, a leader in open-source backup and recovery solutions, was looking to modernize its web
+                        presence. Their existing website design was outdated and not reflective of their innovative
+                        product
+                        suite. The goal was to rebrand Zmanda’s website with a cohesive design system that improves
+                        <b>user
+                            experience, reinforces brand identity, and increases customer engagement.</b>
+                    </p>
+                </div>
+                <div class="">
+                    <p class="font-bold text-2xl mb-4">Problem Statement</p>
+                    <p>The current Zmanda website was functional but lacked a unified visual and interactive language.
+                        The
+                        inconsistent design made it difficult for users to navigate between different product offerings,
+                        leading to a <b>higher bounce rate</b> and <b>lower conversion rate.</b> There was also a need
+                        for <b>improved
+                            mobile
+                            responsiveness</b> and <b>accessibility compliance.</b></p>
+                </div>
+            </div>
+
+            <div class="oldDesign relative shadow-lg">
+                <p class="text-gray-500 p-2 text-left">Old designs</p>
+                <div class=" p-2 border border-2 border-blue-500 relative ">
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -left-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -right-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -left-1">
+                    </div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -right-1">
+                    </div>
+                    <div class="">
+                        <img src="/images/Zmanda_old.png" class="mx-auto" alt="">
+                    </div>
+                </div>
+                <div class="absolute right-12 bottom-12"><img src="/images/Grabbing_cursor.svg" class="cursor h-10"
+                        id="grab" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="py-24">
+            <p class="text-5xl font-bold">Why rebrand?</p>
+            <div class="grid grid-cols-3 gap-6 mt-12">
+                <div class="py-12 px-6 bg-blue-300 space-y-4 text-lg shadow-lg">
+                    <p class="font-bold text-2xl">Modernization</p>
+                    <p>As Zmanda continued to evolve technologically, its online presence needed to reflect that change.
+                    </p>
+                </div>
+                <div class="py-12 px-6 bg-blue-300 space-y-4 text-lg shadow-lg">
+                    <p class="font-bold text-2xl">Consistency</p>
+                    <p>The existing website had a fragmented design with inconsistent typography, color schemes, and
+                        layouts.
+                    </p>
+                </div>
+                <div class="py-12 px-6 bg-blue-300 space-y-4 text-lg shadow-lg">
+                    <p class="font-bold text-2xl">Improved User Experience</p>
+                    <p>With user journeys being unclear, customers often struggled to find critical information,
+                        resulting in lost leads.
+                    </p>
+                </div>
+                <div class="py-12 px-6 bg-blue-300 space-y-4 text-lg shadow-lg">
+                    <p class="font-bold text-2xl">Competitor Pressure</p>
+                    <p>Zmanda needed to differentiate itself in a competitive market where other solutions had more
+                        modern and user-friendly websites.
+                    </p>
+                </div>
+                <div class="py-12 px-6 bg-blue-300 space-y-4 text-lg shadow-lg">
+                    <p class="font-bold text-2xl">Mobile Optimization</p>
+                    <p>With over 40% of traffic coming from mobile devices, the non-optimized mobile experience was
+                        becoming
+                        a barrier to engagement.
+                    </p>
+                </div>
+                <img src="/images/pallette.png"
+                    class="transform rotate-6 hover:rotate-12 transition delay-45 hover:scale-110">
+            </div>
+            <div class="oldDesign relative shadow-lg mt-12">
+                <p class="text-gray-500 p-2 text-left">Zmanda Vs Competitors</p>
+                <div class=" p-2 border border-2 border-blue-500 relative ">
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -left-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -right-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -left-1">
+                    </div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -right-1">
+                    </div>
+                    <div class="">
+                        <img src="/images/competitors.png" class="mx-auto" alt="">
+                    </div>
+
+                </div>
+                <div class="absolute right-12 bottom-12"><img src="/images/Grabbing_cursor.svg" class="cursor h-10"
+                        id="grab" alt="">
+                </div>
+            </div>
+
+
+            <div class="relative">
+
+                <!-- Comment bubble, initially shrunk -->
+                <div
+                    class="flex space-x-2 items-center bg-blue-500 text-white p-2 rounded-tr-full rounded-b-full cursor-pointer absolute top-10 left-32 hover-expand max-width-100 max-width-400 overflow-hidden whitespace-nowrap text-ellipsis">
+                    <img src="/images/pratt.png" class="h-14 w-14 rounded-full" alt="">
+                    <div class="px-2">Zmanda's competitors were way
+                        ahead of us in terms<br> of domain authority and information architecture too!</div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <section class="py-24">
+            <p class="text-5xl font-bold">Project Stakeholders</p>
+            <div class="grid grid-cols-3 gap-6 mt-12">
+                <div class="py-12 px-6 bg-green-300 space-y-4 text-lg shadow-lg">
+                    <p class="font-bold text-2xl">Users/Customers</p>
+                    <p>The most important stakeholders. We based the rebranding on their needs and behavior, ensuring
+                        the
+                        new design improved their experience.
+                    </p>
+                </div>
+                <div class="py-12 px-6 bg-green-300 space-y-4 text-lg shadow-lg">
+                    <p class="font-bold text-2xl">Product Managers</p>
+                    <p>To provide input on product-specific pages and features, ensuring that each page effectively
+                        highlights key offerings.
+                    </p>
+                </div>
+                <div class="py-12 px-6 bg-green-300 space-y-4 text-lg shadow-lg">
+                    <p class="font-bold text-2xl">Developers</p>
+                    <p>To ensure the new design system is feasible to implement within the constraints of the existing
+                        CMS and backend infrastructure.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 text-lg">
+            <p class="text-5xl text-center mb-12 font-bold">User personas</p>
+            <div class="grid grid-cols-3 items-center justify-center space-x-6">
+                <div class="text-center">
+                    <img src="/images/John.png" alt="">
+                    <p class="font-bold">IT Manager</p>
+                    <p>John</p>
+                </div>
+                <div class="col-span-2 shadow-lg">
+                    <div class="bg-red-200 px-4 py-4">
+                        <p><b>Age:</b> 35-50</p>
+                    </div>
+
+                    <div class="bg-white px-4 py-4">
+                        <p><b>Role:</b> Responsible for managing backup and recovery solutions for mid to large-scale
+                            businesses.
+                        </p>
+                    </div>
+
+                    <div class="bg-red-200 px-4 py-4">
+                        <p><b>Pain Points:</b> Finds it hard to quickly assess Zmanda’s solutions on the website. Needs
+                            concise
+                            and
+                            actionable information to make purchase decisions.</p>
+                    </div>
+                    <div class="bg-white px-4 py-4">
+                        <p><b>Goal:</b> Find a reliable, scalable backup solution for the company. Needs to access
+                            technical
+                            details
+                            easily.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-3 items-center justify-center space-x-6 my-12">
+                <div class="text-center">
+                    <img src="/images/Maria.png" class="" alt="">
+                    <p class="font-bold">Small Business Owner</p>
+                    <p>Maria</p>
+                </div>
+                <div class="shadow-lg col-span-2">
+                    <div class="bg-yellow-200 px-4 py-4">
+                        <p><b>Age:</b> 30-45</p>
+                    </div>
+
+                    <div class="bg-white px-4 py-4">
+                        <p><b>Role:</b> Runs a small business with limited technical staff.
+                        </p>
+                    </div>
+
+                    <div class="bg-yellow-200 px-4 py-4">
+                        <p><b>Pain Points:</b> Needs clear, simple-to-understand explanations of services, as well as
+                            customer support and resources.</p>
+                    </div>
+                    <div class="bg-white px-4 py-4">
+                        <p><b>Goal:</b> Compare Zmanda’s offering with competitors and quickly get pricing and features.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-3 items-center justify-center space-x-6">
+                <div class="text-center">
+                    <img src="/images/Sam.png" class="p-4" alt="">
+                    <p class="font-bold">Developer/Engineer </p>
+                    <p>Sam</p>
+                </div>
+                <div class="col-span-2 shadow-lg">
+                    <div class="bg-red-200 px-4 py-4">
+                        <p><b>Age:</b> 35-50</p>
+                    </div>
+
+                    <div class="bg-white px-4 py-4">
+                        <p><b>Role:</b> Responsible for managing backup and recovery solutions for mid to large-scale
+                            businesses.
+                        </p>
+                    </div>
+
+                    <div class="bg-red-200 px-4 py-4">
+                        <p><b>Pain Points:</b> Finds it hard to quickly assess Zmanda’s solutions on the website. Needs
+                            concise
+                            and
+                            actionable information to make purchase decisions.</p>
+                    </div>
+                    <div class="bg-white px-4 py-4">
+                        <p><b>Goal:</b> Find a reliable, scalable backup solution for the company. Needs to access
+                            technical
+                            details
+                            easily.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-24">
+            <p class="text-5xl font-bold">Challenges</p>
+            <div class="grid grid-cols-3 gap-6 mt-12">
+                <div class="py-12 px-6 bg-yellow-300 space-y-4 text-lg shadow-lg">
+                    <p class="font-bold text-2xl">Complex User <br>Journeys</p>
+                    <p>Each user persona had distinct needs—ranging from technical documentation to business pricing
+                        details.
+                    </p>
+                </div>
+                <div class="py-12 px-6 bg-yellow-300 space-y-4 text-lg shadow-lg">
+                    <p class="font-bold text-2xl">Legacy System Integration</p>
+                    <p>The existing website infrastructure was outdated, which limited the design choices and
+                        capabilities without a complete overhaul.
+                    </p>
+                </div>
+                <div class="py-12 px-6 bg-yellow-300 space-y-4 text-lg shadow-lg">
+                    <p class="font-bold text-2xl">Mobile <br>Responsiveness</p>
+                    <p>With a significant portion of users accessing the website via mobile devices, mobile-friendly
+                        designs were a top priority.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24">
+            <p class="text-5xl font-bold">Design process</p>
+            <div class="grid grid-cols-3 gap-4 items-center justify-center mt-20">
+                <div class=" p-2 border border-2 border-blue-500 relative ">
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -left-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -right-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -left-1">
+                    </div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -right-1">
+                    </div>
+                    <div class="">
+                        <img src="/images/research.png" class="mx-auto" alt="">
+                    </div>
+                </div>
+                <div class="py-12 px-6 bg-pink-300 space-y-4 text-lg shadow-lg mt-12 col-span-2">
+                    <p class="font-bold text-2xl"> Research & Discovery</p>
+                    <p>• analyzed competitors' websites and other popular SaaS platforms to study their user flow,
+                        design patterns, and messaging strategies. This provided insight into industry best practices
+                        and revealed opportunities for Zmanda’s new design to stand out.</p>
+                    <p> • Analyzed website analytics (bounce rate, session duration) to identify problematic areas.
+                    </p>
+                </div>
+            </div>
+            <img src="/images/arrow.svg" class="h-32 mt-4 mx-auto">
+            <div class="grid grid-cols-3 gap-4 items-center justify-center">
+                <div class=" p-2 border border-2 border-blue-500 relative ">
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -left-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -right-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -left-1">
+                    </div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -right-1">
+                    </div>
+                    <div class="">
+                        <img src="/images/wireframe.png" class="mx-auto" alt="">
+                    </div>
+                </div>
+                <div class="py-12 px-6 bg-pink-300 space-y-4 text-lg shadow-lg mt-12 col-span-2">
+                    <p class="font-bold text-2xl"> Wireframing</p>
+                    <p> • Created low-fidelity wireframes for different user journeys, ensuring that critical
+                        touchpoints (product pages, support, pricing) were easily accessible.
+                    </p>
+                </div>
+            </div>
+            <img src="/images/arrow.svg" class="h-32 mt-4 mx-auto">
+            <div class="grid grid-cols-3 gap-4 items-center justify-center">
+                <div class=" p-2 border border-2 border-blue-500 relative ">
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -left-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -right-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -left-1">
+                    </div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -right-1">
+                    </div>
+                    <div class="">
+                        <img src="/images/typography.png" class="mx-auto" alt="">
+                    </div>
+                </div>
+                <div class="py-12 px-6 bg-pink-300 space-y-4 text-lg shadow-lg mt-12 col-span-2">
+                    <p class="font-bold text-2xl">Design System Creation</p>
+                    <p> • Developed a cohesive design system, including typography, color palette, components (buttons,
+                        cards, icons), and interaction patterns. </p>
+                    <p> • Ensured brand consistency across all pages, with a modern look that reinforced Zmanda’s
+                        positioning as a tech leader.
+                    </p>
+                </div>
+            </div>
+            <img src="/images/arrow.svg" class="h-32 mt-4 mx-auto">
+
+
+            <div class="grid grid-cols-3 items-center justify-center gap-4">
+                <div class=" p-2 border border-2 border-blue-500 relative ">
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -left-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -right-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -left-1">
+                    </div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -right-1">
+                    </div>
+                    <div class="">
+                        <img src="/images/dev_mode.png" class="mx-auto" alt="">
+                    </div>
+                </div>
+                <div class="py-12 px-6 bg-pink-300 space-y-4 text-lg shadow-lg mt-12 col-span-2">
+                    <p class="font-bold text-2xl">Development Collaboration</p>
+                    <p> • Worked closely with the development team to ensure smooth handoff and implementation within
+                        the existing CMS structure. </p>
+                    <div class="relative">
+
+                        <!-- Comment bubble, initially shrunk -->
+                        <div
+                            class="flex mt-12 space-x-2 items-center bg-blue-500 text-white p-2 rounded-tr-full rounded-b-full cursor-pointer absolute top-10 left-2 hover-expand max-width-100 max-width-400 overflow-hidden whitespace-nowrap text-ellipsis">
+                            <img src="/images/pratt.png" class="h-14 w-14 rounded-full" alt="">
+                            <div class="px-2">Zmanda's website was built on Wordpress, the <br>proposed designs had
+                                to be
+                                feasible by the plugins used.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="py-24">
+            <p class="text-5xl font-bold mb-12">Results and metrics</p>
+            <div class="grid gap-4 grid-cols-2">
+                <div class="flex items-center justify-center space-x-24 bg-purple-300 py-12 px-6">
+                    <div class="flex items-center ">
+                        <img src="/images/numbers/25.png" alt="">
+                        <p class="text-5xl font-bold">%</p>
+                    </div>
+                    <div class="  space-y-4">
+                        <p class="font-bold text-2xl">Reduced bounce
+                            rates</p>
+                        <p> by
+                            25% in the first three months due to clearer navigation and more engaging landing pages.</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center space-x-24 bg-purple-300 py-12 px-6">
+                    <div class="flex items-center ">
+                        <img src="/images/numbers/15.png" alt="">
+                        <p class="text-5xl font-bold">%</p>
+                    </div>
+                    <div class="  space-y-4">
+                        <p class="font-bold text-2xl">Increased conversion rates</p>
+                        <p> by
+                            15% due to better product visibility and simplified user journeys. </p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center space-x-24 bg-purple-300 py-12 px-6">
+                    <div class="flex items-center ">
+                        <img src="/images/numbers/30.png" alt="">
+                        <p class="text-5xl font-bold">%</p>
+                    </div>
+                    <div class="  space-y-4">
+                        <p class="font-bold text-2xl">Increase in mobile traffic retention</p>
+                        <p> by
+                            30%. Improved user satisfaction on mobile devices, with a 20% decrease in mobile bounce
+                            rates
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center space-x-24 bg-purple-300 py-12 px-6">
+                    <div class="flex items-center ">
+                        <img src="/images/numbers/10.png" alt="">
+                        <p class="text-5xl font-bold">%</p>
+                    </div>
+                    <div class="  space-y-4">
+                        <p class="font-bold text-2xl">Average session duration increased</p>
+                        <p> by
+                            10% as users engaged more with the restructured product and resource pages.</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center space-x-24 bg-purple-300 py-12 px-6">
+                    <div class="flex items-center ">
+                        <img src="/images/numbers/20.png" alt="">
+                        <p class="text-5xl font-bold">%</p>
+                    </div>
+                    <div class="  space-y-4">
+                        <p class="font-bold text-2xl">Increase in lead form submissions</p>
+                        <p> by
+                            20% Improved call-to-actions resulted in a 20% increase in lead form submissions from small
+                            business owners and IT managers.</p>
+                    </div>
+                </div>
+        </section>
+
+        <div class="oldDesign relative shadow-lg mt-12">
+            <p class="text-gray-500 p-2 text-left">The new design system</p>
+            <div class=" p-2 border border-2 border-blue-500 relative ">
+                <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -left-1"></div>
+                <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -right-1"></div>
+                <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -left-1">
+                </div>
+                <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -right-1">
+                </div>
+                <div class="">
+                    <img src="/images/new_pages.png" class="mx-auto" alt="">
+                </div>
+
+            </div>
+            <div class="absolute right-12 bottom-12"><img src="/images/Grabbing_cursor.svg" class="cursor h-10"
+                    id="grab" alt="">
+            </div>
+        </div>
+
+        <section class="grid grid-cols-2 items-center gap-8 mt-12">
+            <img src="/images/rocket.png" alt="">
+            <div class="">
+                <p class="text-5xl font-bold mb-4">Conclusion</p>
+                <p>The rebranding of Zmanda’s website was a success, delivering a modern, user-centered design system
+                    that significantly improved user engagement and business outcomes. By creating a cohesive experience
+                    across the site and catering to the specific needs of different user personas, Zmanda’s web presence
+                    now matches the quality of its product offerings.</p>
+            </div>
+        </section>
+        <section class="mt-12 flex justify-between">
+            <a href="" class="text-gray-500 flex items-center justify-center space-x-4 group transition delay-45">
+                <div class="border border-3 p-2 group-hover:bg-blue-500 transition delay-45">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 transform rotate-180 fill-current group-hover:text-white transition delay-45"
+                        viewBox="0 0 256 256">
+                        <path
+                            d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z">
+                        </path>
+                    </svg>
+                </div>
+                <p class="group-hover:text-black">RealNutriCo's Social Media Campaign</p>
+
+            </a>
+            <a href="zmanda_socials.html"
+                class="text-gray-500 flex items-center justify-center space-x-4 group transition delay-45">
+                <p class="group-hover:text-black">Zmanda's Social Media Campaign</p>
+                <div class="border border-3 p-2 group-hover:bg-blue-500 transition delay-45">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 fill-current group-hover:text-white transition delay-45" viewBox="0 0 256 256">
+                        <path
+                            d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z">
+                        </path>
+                    </svg>
+                </div>
+
+
+            </a>
+        </section>
+    </div>
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script>
+
+
+
+        gsap.from('.oldDesign', { x: 300, onComplete: () => changeToPointer() })
+            .to('.cursor', { x: 300, opacity: 0, }, '+=1')
+
+
+
+        function changeToPointer() {
+            document.getElementById("grab").src = "/images/pointer.svg";
+        }
+
+        function changeToResize() {
+            document.getElementById("grab").src = "/images/resize.svg";
+
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
