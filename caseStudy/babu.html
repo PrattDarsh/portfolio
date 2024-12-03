@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babu Vittal's Portfolio</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-image: radial-gradient(#e6e6e6 1px, transparent 1px);
+        background-size: 20px 20px;
+        font-family: 'Satoshi', sans-serif;
+    }
+
+    .hover-expand {
+        transition: max-width 0.3s ease, padding 0.3s ease;
+    }
+
+    .max-width-100 {
+        max-width: 70px;
+    }
+
+
+    .max-width-400:hover {
+        max-width: 900px;
+    }
+
+    .gloria {
+        font-family: "Gloria Hallelujah", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+</style>
+
+<body class="bg-white py-32 text-lg">
+    <div class="max-w-6xl mx-auto">
+        <div class="">
+            <h1 class="text-5xl max-w-4xl font-bold">Case Study: Crafting an Engaging Portfolio for Babu Vittal
+            </h1>
+        </div>
+        <section class="gap-x-12 py-24">
+            <div class="text-lg space-y-20">
+                <div class="">
+                    <p class="font-bold text-2xl mb-4">Project Overview</p>
+                    <p>Babu Vittal, a senior HR leader, needed a personal portfolio website to showcase his expertise,
+                        thought leadership, and achievements in the HR domain. The goal was to create an elegant,
+                        user-friendly site that highlighted his accomplishments and skills in a way that would appeal to
+                        both professional networks and industry audiences. I designed and developed a fully responsive
+                        website that conveys his personal brand and expertise effectively.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="oldDesign relative mt-12">
+                <p class="text-gray-500 p-2 text-left">Babu's Website</p>
+                <div class=" p-2 border border-2 border-blue-500 relative ">
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -left-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -right-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -left-1">
+                    </div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -right-1">
+                    </div>
+                    <div class="">
+                        <img src="/images/Babu/babuMockup.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="py-24">
+            <p class="text-5xl font-bold">Results and Metrics</p>
+            <div class="grid grid-cols-3 gap-6 mt-12">
+                <div
+                    class="py-12 px-6 bg-blue-300 space-y-4 text-lg shadow-lg hover:shadow-xl  translate transition transform hover:scale-105 hover:translate-y-1">
+                    <p class="font-bold text-2xl">Establish a Professional Online Presence</p>
+                    <p>Develop a site that accurately reflects Babu’s professional image.
+                    </p>
+                </div>
+                <div
+                    class="py-12 px-6 bg-blue-300 space-y-4 text-lg shadow-lg hover:shadow-xl  translate transition transform hover:scale-105 hover:translate-y-1">
+                    <p class="font-bold text-2xl">Showcase Achievements and Expertise</p>
+                    <p>Highlight key achievements, publications, and thought leadership in the HR industry.
+                    </p>
+                </div>
+                <div
+                    class="py-12 px-6 bg-blue-300 space-y-4 text-lg shadow-lg hover:shadow-xl  translate transition transform hover:scale-105 hover:translate-y-1">
+                    <p class="font-bold text-2xl">Enhance User Experience:</p>
+                    <p> Prioritize clean navigation and easy access to essential content for visitors.
+                    </p>
+                </div>
+
+            </div>
+            <div class="oldDesign relative shadow-lg mt-12">
+                <p class="text-gray-500 p-2 text-left">Zmanda Vs Competitors</p>
+                <div class=" p-2 border border-2 border-blue-500 relative ">
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -left-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -right-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -left-1">
+                    </div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -right-1">
+                    </div>
+                    <div class="">
+                        <img src="/images/competitors.png" class="mx-auto" alt="">
+                    </div>
+
+                </div>
+                <div class="absolute right-12 bottom-12"><img src="/images/Grabbing_cursor.svg" class="cursor h-10"
+                        id="grab" alt="">
+                </div>
+            </div>
+
+
+            <div class="relative">
+
+                <!-- Comment bubble, initially shrunk -->
+                <div
+                    class="flex space-x-2 items-center bg-blue-500 text-white p-2 rounded-tr-full rounded-b-full cursor-pointer absolute top-10 left-32 hover-expand max-width-100 max-width-400 overflow-hidden whitespace-nowrap text-ellipsis">
+                    <img src="/images/pratt.png" class="h-14 w-14 rounded-full" alt="">
+                    <div class="px-2">Zmanda's competitors were way
+                        ahead of us in terms<br> of domain authority and information architecture too!</div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+
+
+        <section class="py-24 text-lg">
+            <p class="text-5xl text-center mb-12 font-bold">User personas</p>
+            <div class="grid grid-cols-3 items-center justify-center space-x-6">
+                <div class="text-center">
+                    <img src="/images/John.png" alt="">
+                    <p class="font-bold">Human Resources</p>
+                    <p>Priya Sharma</p>
+                </div>
+                <div class="col-span-2 shadow-lg  translate transition transform hover:scale-105 hover:translate-y-1">
+                    <div class="bg-red-200 px-4 py-4">
+                        <p><b>Age:</b> 38</p>
+                    </div>
+
+                    <div class="bg-white px-4 py-4">
+                        <p><b>Role:</b> HR Leader
+                        </p>
+                    </div>
+
+                    <div class="bg-red-200 px-4 py-4">
+                        <p><b>Pain Points:</b> Difficulty finding a centralized source for insights from industry
+                            experts.</p>
+                    </div>
+                    <div class="bg-white px-4 py-4">
+                        <p><b>Goal:</b> Discover thought leadership content and explore potential collaborations with
+                            Babu.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-3 items-center justify-center space-x-6 my-12">
+                <div class="text-center">
+                    <img src="/images/Maria.png" class="" alt="">
+                    <p class="font-bold">Recruitment</p>
+                    <p>Rahul Verma</p>
+                </div>
+                <div class="shadow-lg col-span-2  translate transition transform hover:scale-105 hover:translate-y-1">
+                    <div class="bg-yellow-200 px-4 py-4">
+                        <p><b>Age:</b> 42</p>
+                    </div>
+
+                    <div class="bg-white px-4 py-4">
+                        <p><b>Role:</b> Recruitment Manager
+                        </p>
+                    </div>
+
+                    <div class="bg-yellow-200 px-4 py-4">
+                        <p><b>Pain Points:</b> Challenges in assessing professional credibility quickly through
+                            scattered information.</p>
+                    </div>
+                    <div class="bg-white px-4 py-4">
+                        <p><b>Goal:</b> Evaluate Babu’s experience and industry impact for potential leadership or
+                            advisory roles.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-3 items-center justify-center space-x-6">
+                <div class="text-center">
+                    <img src="/images/Sam.png" class="p-4" alt="">
+                    <p class="font-bold">HR Education</p>
+                    <p>Ananya Gupta</p>
+                </div>
+                <div class="col-span-2 shadow-lg  translate transition transform hover:scale-105 hover:translate-y-1">
+                    <div class="bg-red-200 px-4 py-4">
+                        <p><b>Age:</b> 24</p>
+                    </div>
+
+                    <div class="bg-white px-4 py-4">
+                        <p><b>Role:</b> HR Student
+                        </p>
+                    </div>
+
+                    <div class="bg-red-200 px-4 py-4">
+                        <p><b>Pain Points:</b> Overwhelming information from multiple sources with little practical
+                            application guidance.</p>
+                    </div>
+                    <div class="bg-white px-4 py-4">
+                        <p><b>Goal:</b> Learn from Babu’s career journey and gain actionable knowledge for professional
+                            growth.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-3 items-center justify-center space-x-6">
+                <div class="text-center">
+                    <img src="/images/Sam.png" class="p-4" alt="">
+                    <p class="font-bold"> Event Management</p>
+                    <p>Sanjay Mehta</p>
+                </div>
+                <div class="col-span-2 shadow-lg  translate transition transform hover:scale-105 hover:translate-y-1">
+                    <div class="bg-red-200 px-4 py-4">
+                        <p><b>Age:</b> 45</p>
+                    </div>
+
+                    <div class="bg-white px-4 py-4">
+                        <p><b>Role:</b> Conference Organizer
+                        </p>
+                    </div>
+
+                    <div class="bg-red-200 px-4 py-4">
+                        <p><b>Pain Points:</b>Struggles to verify speaker credentials and assess relevance to conference
+                            topics.</p>
+                    </div>
+                    <div class="bg-white px-4 py-4">
+                        <p><b>Goal:</b> Find a credible and engaging speaker to add value to industry events..</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-24">
+            <p class="text-5xl font-bold">Research & Discovery
+            </p>
+            <div class="grid grid-cols-2 gap-6 mt-12">
+                <div
+                    class="py-12 px-6 bg-yellow-300 space-y-4 text-lg shadow-lg  translate transition transform hover:scale-105 hover:translate-y-1">
+
+                    <p>Reviewed competitor portfolios and influential HR leaders' websites to identify the best features
+                        for a professional portfolio in the HR industry.
+                    </p>
+                </div>
+                <div
+                    class="py-12 px-6 bg-yellow-300 space-y-4 text-lg shadow-lg  translate transition transform hover:scale-105 hover:translate-y-1">
+
+                    <p>Analyzed user behavior to determine content structure and key elements for engagement, such as
+                        easy-to-navigate sections, mobile responsiveness, and visually impactful design.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-24">
+            <p class="text-5xl font-bold">Design & Development Process</p>
+            <div class="grid grid-cols-3 gap-4 items-center justify-center mt-20">
+                <div class=" p-2 border border-2 border-blue-500 relative ">
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -left-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -right-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -left-1">
+                    </div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -right-1">
+                    </div>
+                    <div class="">
+                        <img src="/images/Babu/informationArch.png" class="mx-auto" alt="">
+                    </div>
+                </div>
+                <div
+                    class="py-12 px-6 bg-pink-300 space-y-4 text-lg shadow-lg mt-12 col-span-2  translate transition transform hover:scale-105 hover:translate-y-1">
+                    <p class="font-bold text-2xl"> Information Architecture</p>
+                    <p>• Organized the site into well-defined sections such as Biography, Publications, Experience, and
+                        Speaking Engagements to allow users to find relevant information quickly.</p>
+
+                    </p>
+                </div>
+            </div>
+            <img src="/images/arrow.svg" class="h-32 mt-4 mx-auto">
+            <div class="grid grid-cols-3 gap-4 items-center justify-center">
+                <div class=" p-2 border border-2 border-blue-500 relative ">
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -left-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -right-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -left-1">
+                    </div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -right-1">
+                    </div>
+                    <div class="">
+                        <img src="/images/wireframe.png" class="mx-auto" alt="">
+                    </div>
+                </div>
+                <div
+                    class="py-12 px-6 bg-pink-300 space-y-4 text-lg shadow-lg mt-12 col-span-2  translate transition transform hover:scale-105 hover:translate-y-1">
+                    <p class="font-bold text-2xl"> Visual Design</p>
+                    <p> • Opted for a clean, modern aesthetic using a minimalistic color palette that reflects
+                        professionalism and readability.
+                    </p>
+                </div>
+            </div>
+            <img src="/images/arrow.svg" class="h-32 mt-4 mx-auto">
+            <div class="grid grid-cols-3 gap-4 items-center justify-center">
+                <div class=" p-2 border border-2 border-blue-500 relative ">
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -left-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -right-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -left-1">
+                    </div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -right-1">
+                    </div>
+                    <div class="">
+                        <img src="/images/Babu/Mobile.png" class="mx-auto" alt="">
+                    </div>
+                </div>
+                <div
+                    class="py-12 px-6 bg-pink-300 space-y-4 text-lg shadow-lg mt-12 col-span-2  translate transition transform hover:scale-105 hover:translate-y-1">
+                    <p class="font-bold text-2xl">Responsive Design</p>
+                    <p> • Developed a fully responsive layout to ensure smooth browsing on both mobile and desktop
+                        devices. </p>
+
+                </div>
+            </div>
+            <img src="/images/arrow.svg" class="h-32 mt-4 mx-auto">
+
+
+            <div class="grid grid-cols-3 items-center justify-center gap-4">
+                <div class=" p-2 border border-2 border-blue-500 relative ">
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -left-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -right-1"></div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -left-1">
+                    </div>
+                    <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -right-1">
+                    </div>
+                    <div class="">
+                        <img src="/images/Babu/seo.png" class="mx-auto" alt="">
+                    </div>
+                </div>
+                <div
+                    class="py-12 px-6 bg-pink-300 space-y-4 text-lg shadow-lg mt-12 col-span-2  translate transition transform hover:scale-105 hover:translate-y-1">
+                    <p class="font-bold text-2xl">SEO Optimization</p>
+                    <p> • Implemented best practices in SEO, ensuring the site ranks well on search engines to increase
+                        visibility. </p>
+
+                </div>
+
+            </div>
+            <div class="relative">
+
+                <!-- Comment bubble, initially shrunk -->
+                <div
+                    class="flex mt-12 space-x-2 items-center bg-blue-500 text-white p-2 rounded-tr-full rounded-b-full cursor-pointer absolute top-10 left-2 hover-expand max-width-100 max-width-400 overflow-hidden whitespace-nowrap text-ellipsis">
+                    <img src="/images/pratt.png" class="h-14 w-14 rounded-full" alt="">
+                    <div class="px-2">Zmanda's website was built on Wordpress, the <br>proposed designs had
+                        to be
+                        feasible by the plugins used.</div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="py-24">
+            <p class="text-5xl font-bold mb-12">Results and metrics</p>
+            <div class="grid gap-4 grid-cols-2">
+                <div
+                    class="flex items-center justify-center space-x-12 bg-purple-300 py-12 px-6  translate transition transform hover:scale-105 hover:translate-y-1">
+
+                    <div class=" ">
+                        <p class="font-bold text-2xl">Enhanced Professional Image:</p>
+                        <p> Babu’s online portfolio now effectively showcases his skills and experience, leading to
+                            positive feedback from peers and recruiters.</p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center justify-center space-x-12 bg-purple-300 py-12 px-6  translate transition transform hover:scale-105 hover:translate-y-1">
+
+                    <div class=" ">
+                        <p class="font-bold text-2xl">Increased Engagement</p>
+                        <p>The site received a notable increase in visits from industry peers and professionals. </p>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center justify-center space-x-12 bg-purple-300 py-12 px-6  translate transition transform hover:scale-105 hover:translate-y-1">
+
+                    <div class=" ">
+                        <p class="font-bold text-2xl">SEO Visibility</p>
+                        <p> Improved site visibility and organic traffic through well-structured content and optimized
+                            metadata.
+                        </p>
+                    </div>
+                </div>
+
+        </section>
+
+        <div class="oldDesign relative shadow-lg mt-12">
+            <p class="text-gray-500 p-2 text-left">The new design system</p>
+            <div class=" p-2 border border-2 border-blue-500 relative ">
+                <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -left-1"></div>
+                <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -top-1 -right-1"></div>
+                <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -left-1">
+                </div>
+                <div class="absolute w-2 h-2 bg-blue-100 border border-1 border-blue-500 -bottom-1 -right-1">
+                </div>
+                <div class="">
+                    <img src="/images/Babu/BabuFinal.png" class="mx-auto" alt="">
+                </div>
+
+            </div>
+            <div class="absolute right-12 bottom-12"><img src="/images/Grabbing_cursor.svg" class="cursor h-10"
+                    id="grab" alt="">
+            </div>
+        </div>
+
+        <section class="grid grid-cols-2 items-center gap-8 mt-12">
+            <img src="/images/rocket.png" alt="">
+            <div class="">
+                <p class="text-5xl font-bold mb-4">Conclusion</p>
+                <p>The rebranding of Zmanda’s website was a success, delivering a modern, user-centered design system
+                    that significantly improved user engagement and business outcomes. By creating a cohesive experience
+                    across the site and catering to the specific needs of different user personas, Zmanda’s web presence
+                    now matches the quality of its product offerings.</p>
+            </div>
+        </section>
+        <section class="mt-12 flex justify-between">
+            <a href="" class="text-gray-500 flex items-center justify-center space-x-4 group transition delay-45">
+                <div class="border border-3 p-2 group-hover:bg-blue-500 transition delay-45">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 transform rotate-180 fill-current group-hover:text-white transition delay-45"
+                        viewBox="0 0 256 256">
+                        <path
+                            d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z">
+                        </path>
+                    </svg>
+                </div>
+                <p class="group-hover:text-black">RealNutriCo's Social Media Campaign</p>
+
+            </a>
+            <a href="zmanda_socials.html"
+                class="text-gray-500 flex items-center justify-center space-x-4 group transition delay-45">
+                <p class="group-hover:text-black">Zmanda's Social Media Campaign</p>
+                <div class="border border-3 p-2 group-hover:bg-blue-500 transition delay-45">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 fill-current group-hover:text-white transition delay-45" viewBox="0 0 256 256">
+                        <path
+                            d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z">
+                        </path>
+                    </svg>
+                </div>
+
+
+            </a>
+        </section>
+    </div>
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script>
+
+
+
+        gsap.from('.oldDesign', { x: 300, onComplete: () => changeToPointer() })
+            .to('.cursor', { x: 300, opacity: 0, }, '+=1')
+
+
+
+        function changeToPointer() {
+            document.getElementById("grab").src = "/images/pointer.svg";
+        }
+
+        function changeToResize() {
+            document.getElementById("grab").src = "/images/resize.svg";
+
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
